@@ -1,4 +1,4 @@
-package com.uhg.perf
+package com.perf
 
 import grails.plugin.redis.RedisService
 

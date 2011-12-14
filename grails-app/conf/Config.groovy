@@ -104,9 +104,10 @@ grails.resources.modules = {
 
 perf {
     runners {
-        'Large Number Performance Test' {
-            workers = 4
-            performer = com.perf.runners.math.LargeNumberPerformanceService
+        largeNumberPerformanceRunner {
+            description = 'Large Number Performance Test'
+            maxWorkers = 10
+            //workerClass = com.perf.runners.math.LargeNumberPerformanceService
         }
     }
 }

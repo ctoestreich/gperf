@@ -1,8 +1,9 @@
-package com.uhg.perf
+package com.perf
 
 import grails.plugin.redis.RedisService
 
 import com.perf.PerformanceService
+import com.perf.PerformanceConstants
 
 class PerformanceController {
 

@@ -1,8 +1,14 @@
-package com.uhg.perf
+package com.perf.runners
 
-/**
- */
-abstract class AbstractPerformanceAnalysisJob {
+import com.perf.AbstractPerformanceAnalysisJob
+import grails.plugin.redis.RedisService
+import com.perf.ResultsService
+
+abstract class AbstractPerformanceService extends AbstractPerformanceAnalysisJob {
+
+    static transactional = false
+    RedisService redisService
+    ResultsService resultsService
 
     /**
      * Wrap call to method with this closure to benchmark its performance

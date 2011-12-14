@@ -1,4 +1,4 @@
-<%@ page import="com.uhg.perf.Result; com.uhg.perf.PerformanceConstants" contentType="text/html;charset=UTF-8" %>
+<%@ page import="com.perf.Result; com.perf.PerformanceConstants" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
   <meta name="layout" content="main"/>
@@ -8,13 +8,16 @@
 <body>
 <g:render template="/templates/navigation"/>
 <%
-  def jobs = [[name:PerformanceConstants.CONSUMER_IDENTITY_GRAILS_JOB, maxWorkers: 10],
-          [name: PerformanceConstants.CONSUMER_IDENTITY_JAVA_JOB, maxWorkers:10],
-          [name: PerformanceConstants.CONSUMER_IDENTITY_COMPARISON_JOB, maxWorkers:1]]
+  def jobs = []
+  grailsApplication.config.perf.runners.each { runner ->
+    def config = grailsApplication.config.perf.runners[runner.key]
+    jobs << [name: runner.key, description: config?.description?:'Unknown', maxWorkers: config?.maxWorkers ?: 1]
+  }
 %>
+
 <g:each in="${jobs}" var="job">
   <div class="job jobrunner" id= ${job.name}>
-    <span class="cell"><b>${job.name}</b></span>
+    <span class="cell"><b>${job.description}</b></span>
     <span class="cell">
       Workers: <g:select name="${job.name}Workers" from="${1..job.maxWorkers}"/>
     </span>
@@ -48,13 +51,13 @@
     alert('stopping ' + name);
   }
 
-  (function($) {
+  (function ($) {
     $.widget('uhg.jobrunner', {
-               run: function() {
+               run:function () {
                  var self = this;
                  self._processData(self);
                },
-               _create: function() {
+               _create:function () {
                  var self = this;
                  self.running = false;
                  self.stop = false;
@@ -63,31 +66,31 @@
                  self.id = self.element.attr("id");
                  self._initButtons(self);
                  $.when($.ajax({
-                                 method: "POST",
-                                 dataType: "html",
-                                 url: "${createLink(controller:'performance',action:'status')}",
-                                 data: "id=" + self.id
-                               })).then(function(data) {
+                                 method:"POST",
+                                 dataType:"html",
+                                 url:"${createLink(controller:'performance',action:'status')}",
+                                 data:"id=" + self.id
+                               })).then(function (data) {
                                           self._processStatus(self, data);
                                           if(data == "Running") {
                                             jQuery("#" + self.id + "Stop").show();
                                             jQuery("#" + self.id + "Start").hide();
                                           }
-                                        }, function() {
+                                        }, function () {
                                           self._failure(self);
                                         });
 
                },
-               _initButtons: function(self) {
-                 jQuery("#" + self.id + "Start").click(function() {
+               _initButtons:function (self) {
+                 jQuery("#" + self.id + "Start").click(function () {
                    self._startWorkers(self);
                  });
-                 jQuery("#" + self.id + "Stop").click(function() {
+                 jQuery("#" + self.id + "Stop").click(function () {
                    self._stopWorkers(self);
                  });
                  jQuery("#" + self.id + "Stop").hide();
                },
-               _processData: function(self) {
+               _processData:function (self) {
                  self._showLoading(self);
                  if(self.stop || self.errored) {
                    self._stopWorkers(self);
@@ -99,94 +102,94 @@
                         self._getStatus(self))
                          .done(self._hideLoading(self));
                },
-               _showLoading: function(self) {
+               _showLoading:function (self) {
                  $("#" + self.id + "Ajax").show();
                },
-               _hideLoading: function(self) {
+               _hideLoading:function (self) {
                  $("#" + self.id + "Ajax").hide();
                },
-               _stopWorkers: function(self) {
+               _stopWorkers:function (self) {
                  self._stop(self);
                  $.when($.ajax({
-                                 method: "POST",
-                                 dataType: "html",
-                                 url: "${createLink(controller:'performance',action:'stopWorkers')}",
-                                 data: "id=" + self.id
-                               })).then(function(data) {
+                                 method:"POST",
+                                 dataType:"html",
+                                 url:"${createLink(controller:'performance',action:'stopWorkers')}",
+                                 data:"id=" + self.id
+                               })).then(function (data) {
                                           self._processStatus(self, data);
-                                        }, function() {
+                                        }, function () {
                                           self._failure(self);
                                         });
                },
-               _startWorkers: function(self) {
+               _startWorkers:function (self) {
                  self._start(self);
                  self.start = false;
                  $.when($.ajax({
-                                 method: "POST",
-                                 dataType: "html",
-                                 url: "${createLink(controller:'performance',action:'startWorkers')}",
-                                 data: "id=" + self.id + "&workers=" + $("#" + self.id + "Workers :selected").val()
-                               })).then(function(data) {
+                                 method:"POST",
+                                 dataType:"html",
+                                 url:"${createLink(controller:'performance',action:'startWorkers')}",
+                                 data:"id=" + self.id + "&workers=" + $("#" + self.id + "Workers :selected").val()
+                               })).then(function (data) {
                                           self._processStatus(self, data);
-                                        }, function() {
+                                        }, function () {
                                           self._failure(self);
                                         });
                },
-               _processResults: function(self, data) {
+               _processResults:function (self, data) {
                  if(data) {
                    $("#" + self.id + "Count").html(data.cnt);
                    $("#" + self.id + "Average").html(data.avg);
                    $("#" + self.id + "Errors").html(data.err);
                  }
                },
-               _getResults: function(self) {
+               _getResults:function (self) {
                  var dfd = new jQuery.Deferred();
                  $.when($.ajax({
-                                 method: "GET",
-                                 dataType: "json",
-                                 url: "${createLink(controller:'results',action:'statistics')}",
-                                 data: "id=" + self.id
-                               })).then(function(data) {
+                                 method:"GET",
+                                 dataType:"json",
+                                 url:"${createLink(controller:'results',action:'statistics')}",
+                                 data:"id=" + self.id
+                               })).then(function (data) {
                                           self._processResults(self, data);
-                                        }, function() {
+                                        }, function () {
                                           self._failure(self);
                                         });
                  return dfd;
                },
-               _processStatus: function(self, data) {
+               _processStatus:function (self, data) {
                  $("#" + self.id + "Status").html(data);
                  if(data == "Error") {
                    self._stopWorkers();
                  }
                },
-               _getStatus: function(self) {
+               _getStatus:function (self) {
                  var dfd = new jQuery.Deferred();
                  $.when($.ajax({
-                                 method: "POST",
-                                 dataType: "html",
-                                 url: "${createLink(controller:'performance',action:'status')}",
-                                 data: "id=" + self.id
-                               })).then(function(data) {
+                                 method:"POST",
+                                 dataType:"html",
+                                 url:"${createLink(controller:'performance',action:'status')}",
+                                 data:"id=" + self.id
+                               })).then(function (data) {
                                           self._processStatus(self, data);
                                           status = data;
-                                        }, function() {
+                                        }, function () {
                                           self._failure(self);
                                         });
                  return dfd;
                },
-               _failure: function(self) {
+               _failure:function (self) {
                  console.log("error encountered");
                  self._stop(self);
                  clearInterval(self.interval);
                },
-               _start: function(self) {
+               _start:function (self) {
                  console.log(self.id, "Starting");
                  self.start = false;
                  self.running = true;
                  $("#" + self.id + "Stop").show();
                  $("#" + self.id + "Start").hide();
                },
-               _stop: function(self) {
+               _stop:function (self) {
                  self.start = false;
                  self.stop = false;
                  self.running = false;
@@ -194,7 +197,7 @@
                  $("#" + self.id + "Stop").hide();
                  $("#" + self.id + "Start").show();
                },
-               setInterval: function(interval) {
+               setInterval:function (interval) {
                  var self = this;
                  self.interval = interval;
                }
@@ -203,9 +206,9 @@
   })
           (jQuery);
 
-  jQuery(function() {
+  jQuery(function () {
     jQuery(".jobrunner").jobrunner();
-    var interval = setInterval(function() {
+    var interval = setInterval(function () {
       jQuery(".jobrunner").jobrunner("run");
     }, 4000);
     jQuery(".jobrunner").jobrunner("setInterval", interval);

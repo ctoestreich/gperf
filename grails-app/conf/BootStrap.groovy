@@ -1,4 +1,3 @@
-import grails.plugin.redis.RedisService
 import com.perf.DataService
 
 class BootStrap {

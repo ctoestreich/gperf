@@ -1,4 +1,4 @@
-import com.uhg.perf.PerformanceController
+import com.perf.PerformanceController
 
 class UrlMappings {
 

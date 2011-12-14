@@ -22,6 +22,7 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo "http://m2repo.spockframework.org/snapshots"
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
@@ -30,6 +31,8 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        test ":spock:0.5-groovy-1.7.1"
+        test ":spock:0.6-SNAPSHOT"
+        test ":code-coverage:1.2.5"
+        test ":codenarc:0.16.1"
     }
 }
