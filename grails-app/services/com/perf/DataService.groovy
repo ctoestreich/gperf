@@ -4,7 +4,7 @@ import grails.plugin.redis.RedisService
 
 class DataService {
 
-    static transactional = true
+    static transactional = false
     RedisService redisService
 
     def populateSampleConsumerData() {

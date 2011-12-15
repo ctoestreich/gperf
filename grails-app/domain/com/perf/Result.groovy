@@ -6,6 +6,7 @@ class Result implements Serializable {
     String details
     Integer executionTime = 0
     Date createDate = new Date()
+    Boolean isError = false
 
 //    static constraints = {
 //        testName blank: false
@@ -16,6 +17,7 @@ class Result implements Serializable {
         "testName=" + testName +
         "&details=" + details +
         "&executionTime=" + executionTime +
-        "&createDate=" + createDate
+        "&createDate=" + createDate +
+        "&isError=" + isError
     }
 }

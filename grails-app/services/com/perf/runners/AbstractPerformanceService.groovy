@@ -1,10 +1,9 @@
 package com.perf.runners
 
-import com.perf.AbstractPerformanceAnalysisJob
-import grails.plugin.redis.RedisService
 import com.perf.ResultsService
+import grails.plugin.redis.RedisService
 
-abstract class AbstractPerformanceService extends AbstractPerformanceAnalysisJob {
+abstract class AbstractPerformanceService implements PerformanceService {
 
     static transactional = false
     RedisService redisService

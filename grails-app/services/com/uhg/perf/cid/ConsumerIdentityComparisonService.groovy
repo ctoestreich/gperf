@@ -1,9 +1,6 @@
 package com.uhg.perf.cid
 
-
-import com.perf.AbstractPerformanceAnalysisJob
-
-class ConsumerIdentityComparisonService extends AbstractPerformanceAnalysisJob {
+class ConsumerIdentityComparisonService {
 
     static transactional = true
 

@@ -2,15 +2,16 @@ package com.perf.runners.math
 
 import com.perf.Result
 import com.perf.runners.AbstractPerformanceService
-import com.perf.runners.PerformanceService
 
-class LargeNumberPerformanceService extends AbstractPerformanceService implements PerformanceService {
+class LargeNumberPerformanceService extends AbstractPerformanceService {
 
-    Result performanceTest() {
+    Result performTest() {
         Long result = 1
-        100000.times {
-            result += it
+        def executionTime = benchmark {
+            10000.times {
+                result += it
+            }
         }
-        new Result()
+        new Result(testName: 'Long Number Performance Service', executionTime: executionTime)
     }
 }

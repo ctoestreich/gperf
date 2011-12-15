@@ -6,6 +6,6 @@ import com.perf.Result
  */
 public interface PerformanceService {
 
-    Result performanceTest()
+    Result performTest()
 
 }

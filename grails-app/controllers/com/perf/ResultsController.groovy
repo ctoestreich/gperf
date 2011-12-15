@@ -1,9 +1,7 @@
 package com.perf
 
-import grails.plugin.redis.RedisService
-
-import com.perf.ResultsService
 import grails.converters.JSON
+import grails.plugin.redis.RedisService
 
 class ResultsController {
 
@@ -17,7 +15,7 @@ class ResultsController {
         def offset = params?.offset?.toInteger() ?: 0
         def type = redisService.type(params?.queue)
         if(type == 'list') {
-            results = redisService.lrange(params?.queue, offset, max+offset-1)
+            results = redisService.lrange(params?.queue, offset, max + offset - 1)
             itemCount = redisService.llen(params?.queue)
         }
         render(view: "resultDetails", model: [itemCount: itemCount, results: results, queue: params?.queue])

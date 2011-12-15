@@ -1,3 +1,5 @@
+import com.perf.PerformanceRunnerJob
+
 // locations to search for config files that get merged into the main config
 // config files can either be Java properties files or ConfigSlurper scripts
 
@@ -102,12 +104,33 @@ grails.resources.modules = {
     }
 }
 
+grails {
+    redis {
+        password = ''
+    }
+    jesque {
+        pruneWorkersOnStartup = true
+        workers {
+            performanceRunnerPool {
+                queueNames = 'gPerfQueue'
+                jobTypes = [(PerformanceRunnerJob.simpleName): PerformanceRunnerJob]
+            }
+        }
+    }
+}
+
 perf {
     runners {
         largeNumberPerformanceRunner {
             description = 'Large Number Performance Test'
             maxWorkers = 10
-            //workerClass = com.perf.runners.math.LargeNumberPerformanceService
+            workerClass = com.perf.runners.math.LargeNumberPerformanceService
+        }
+
+        stockQuotePerformanceRunner {
+            description = 'Stock Quote Service Performance Test'
+            maxWorkers = 2
+            workerClass = com.perf.runners.soap.StockQuotePerformanceService
         }
     }
 }

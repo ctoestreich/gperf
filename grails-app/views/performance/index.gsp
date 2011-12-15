@@ -72,7 +72,7 @@
                                  data:"id=" + self.id
                                })).then(function (data) {
                                           self._processStatus(self, data);
-                                          if(data == "Running") {
+                                          if(data == '<% PerformanceConstants.RUNNING %>') {
                                             jQuery("#" + self.id + "Stop").show();
                                             jQuery("#" + self.id + "Start").hide();
                                           }

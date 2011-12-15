@@ -1,10 +1,11 @@
 package com.perf
 
-class PerformanceService {
+class WorkerService {
 
     static transactional = false
     def redisService
     def resultsService
+    def jesqueService
 
     def resumeWorkers() {
 
@@ -12,7 +13,9 @@ class PerformanceService {
 
     def startWorkers(String jobName, String workers) {
         if(log.isDebugEnabled()) log.debug "Starting $jobName with $workers workers"
-//        redisService.set(jobName, PerformanceConstants.RUNNING)
+        redisService.set(jobName, PerformanceConstants.RUNNING)
+        jesqueService.enqueue('gPerfQueue',PerformanceRunnerJob.simpleName, jobName, workers)
+//
 //        redisService.set("${jobName}Workers", workers)
 //        if(jobName == PerformanceConstants.CONSUMER_IDENTITY_JAVA_JOB){
 //            consumerIdentityJavaService.invokeService(workers)
@@ -25,8 +28,8 @@ class PerformanceService {
 
     def stopWorkers(String jobName) {
         if(log.isDebugEnabled()) log.debug "Stopping ${jobName}"
-//        redisService.set(jobName, PerformanceConstants.STOPPED)
-//        redisService.set("${jobName}Workers", "0")
+        redisService.set(jobName, PerformanceConstants.STOPPED)
+        redisService.set("${jobName + PerformanceConstants.WORKERS}", "0")
     }
 
 //    private perfomanceTest(Closure closure) {

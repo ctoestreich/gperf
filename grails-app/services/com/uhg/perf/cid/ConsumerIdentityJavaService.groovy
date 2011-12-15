@@ -1,10 +1,6 @@
 package com.uhg.perf.cid
 
-import com.perf.AbstractPerformanceAnalysisJob
-
-
-
-class ConsumerIdentityJavaService extends AbstractPerformanceAnalysisJob {
+class ConsumerIdentityJavaService {
 
 //    static transactional = false
 //

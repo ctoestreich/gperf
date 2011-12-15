@@ -7,6 +7,10 @@ class PerformanceConstants {
     public final static String IDLE = "Idle"
     public final static String STOPPED = "Stopped"
     public final static String ERROR = "Error"
+    public final static String RESULTS = "Results"
+    public final static String WORKERS = "Workers"
+    public final static String DURATION = "Duration"
+
 
 //    public final static String CONSUMER_IDENTITY_GRAILS_JOB = "ConsumerIdentityGrailsJob"
 //    public final static String CONSUMER_IDENTITY_JAVA_JOB = "ConsumerIdentityJavaJob"

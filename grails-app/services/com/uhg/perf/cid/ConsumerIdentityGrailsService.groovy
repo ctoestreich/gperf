@@ -1,10 +1,6 @@
 package com.uhg.perf.cid
 
-import com.perf.AbstractPerformanceAnalysisJob
-
-
-
-class ConsumerIdentityGrailsService extends AbstractPerformanceAnalysisJob {
+class ConsumerIdentityGrailsService {
 
 //    static transactional = false
 //    RedisService redisService

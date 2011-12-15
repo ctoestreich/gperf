@@ -1,4 +1,4 @@
-<%@ page import="com.uhg.perf.Result; com.perf.PerformanceConstants" contentType="text/html;charset=UTF-8" %>
+<%@ page import="com.perf.Result; com.perf.PerformanceConstants" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
   <meta name="layout" content="main"/>
