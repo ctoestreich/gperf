@@ -8,7 +8,7 @@ class LargeNumberPerformanceService extends AbstractPerformanceService {
     Result performTest() {
         Long result = 1
         def executionTime = benchmark {
-            10000.times {
+            100000.times {
                 result += it
             }
         }

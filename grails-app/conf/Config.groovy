@@ -112,6 +112,7 @@ grails {
         pruneWorkersOnStartup = true
         workers {
             performanceRunnerPool {
+                workers = 10
                 queueNames = 'gPerfQueue'
                 jobTypes = [(PerformanceRunnerJob.simpleName): PerformanceRunnerJob]
             }
@@ -121,15 +122,21 @@ grails {
 
 perf {
     runners {
+        xmlSlurperPerformanceRunner {
+            description = 'Xml Slurper Performance Runner'
+            maxWorkers = 10
+            workerClass = com.perf.runners.xml.XmlSlurperPerformanceService
+        }
+
         largeNumberPerformanceRunner {
             description = 'Large Number Performance Test'
-            maxWorkers = 10
+            maxWorkers = 20
             workerClass = com.perf.runners.math.LargeNumberPerformanceService
         }
 
         stockQuotePerformanceRunner {
             description = 'Stock Quote Service Performance Test'
-            maxWorkers = 2
+            maxWorkers = 4
             workerClass = com.perf.runners.soap.StockQuotePerformanceService
         }
     }

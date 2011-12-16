@@ -21,7 +21,7 @@ class PerformanceRunnerJob {
 
         def threads = Integer.parseInt(workers)
         threads.times {
-            callAsync {
+            runAsync {
                 while(redisService.get(jobName) == PerformanceConstants.RUNNING) {
                     Result result = service.performTest()
                     saveResults(jobName, result)

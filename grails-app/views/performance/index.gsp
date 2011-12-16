@@ -52,7 +52,7 @@
   }
 
   (function ($) {
-    $.widget('uhg.jobrunner', {
+    $.widget('ace.jobrunner', {
                run:function () {
                  var self = this;
                  self._processData(self);
@@ -210,7 +210,7 @@
     jQuery(".jobrunner").jobrunner();
     var interval = setInterval(function () {
       jQuery(".jobrunner").jobrunner("run");
-    }, 4000);
+    }, 5000);
     jQuery(".jobrunner").jobrunner("setInterval", interval);
 
   });

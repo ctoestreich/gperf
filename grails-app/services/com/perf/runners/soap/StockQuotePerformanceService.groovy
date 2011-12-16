@@ -2,19 +2,20 @@ package com.perf.runners.soap
 
 import com.perf.Result
 import com.perf.runners.AbstractPerformanceService
+import net.webservicex.StockQuoteSoap
 
 class StockQuotePerformanceService extends AbstractPerformanceService {
 
-    net.webservicex.StockQuoteSoap stockQuoteClient
+    StockQuoteSoap stockQuoteClient
 
     com.perf.Result performTest() {
-        println 'performaing test StockQuotePerformanceService'
+        String quote = ''
+
         def duration = benchmark {
-            String quote = stockQuoteClient.getQuote(randomStock)
-            println quote
+            quote = stockQuoteClient.getQuote(randomStock)
         }
 
-        new Result(executionTime: duration, testName: 'Stock Quote Performance Service')
+        new Result(details: quote, executionTime: duration, testName: 'Stock Quote Performance Service')
     }
 
     private String getRandomStock() {

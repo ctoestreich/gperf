@@ -24,19 +24,15 @@ class DataService {
     }
 
     def flushResults() {
-        redisService.keys("*Results").each {
+        redisService.keys("*${PerformanceConstants.RESULTS}").each {
             redisService.del(it)
         }
 
-        redisService.keys("*Error").each {
+        redisService.keys("*${PerformanceConstants.ERROR}").each {
             redisService.del(it)
         }
 
-        redisService.keys("*ResultsDuration").each {
-            redisService.del(it)
-        }
-
-        redisService.keys("*ErrorDuration").each {
+        redisService.keys("*${PerformanceConstants.DURATION}").each {
             redisService.del(it)
         }
     }
