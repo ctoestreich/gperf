@@ -12,7 +12,6 @@ class BootStrap {
         dataService.populateSampleConsumerData()
 
         PerformanceRunnerJob.metaClass.runAsync = { Runnable runme ->
-            println 'runAsync'
             executorService.withPersistence(runme)
         }
 
