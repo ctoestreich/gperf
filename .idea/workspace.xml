@@ -206,7 +206,7 @@
       <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="103" selection-start="3475" selection-end="3475" vertical-scroll-proportion="0.821366">
+            <state line="9" column="22" selection-start="736" selection-end="736" vertical-scroll-proportion="0.26795095">
               <folding />
             </state>
           </provider>
@@ -995,7 +995,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
       <value>
@@ -1299,7 +1299,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="103" selection-start="3475" selection-end="3475" vertical-scroll-proportion="0.821366">
+        <state line="9" column="22" selection-start="736" selection-end="736" vertical-scroll-proportion="0.26795095">
           <folding />
         </state>
       </provider>
