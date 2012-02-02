@@ -6,6 +6,7 @@ A simple framework with a jQuery widget on the front end to do performance testi
 Using the web admin console, configured jobs will be submitted to a queue in jesque with a type (workerClass) and number of threads to use.  A jesque worker will then pick up the queued jobs and spawn off a number of worker threads using executor.  These threads will continue to run until the user then stops the job via the admin console.  Results will be updated real-time to the screen using a custom ajax enabled jQuery widget.
 
 The admin console provides the following functionality:
+
 * View paged resultset of successful & error results per job
 * List all keys in Redis
 * Clear all results
