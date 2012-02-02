@@ -72,4 +72,4 @@ The values are represented via the following:
 
 _You will need to start a redis server and make sure the Config.groovy points to it before running the application._
 
-Once one or more jobs are configured and redis is running you can `run-app` and navigate to [http://localhost:8080/gperf].
+Once one or more jobs are configured and redis is running you can `run-app` and navigate to [localhost][http://localhost:8080/gperf].

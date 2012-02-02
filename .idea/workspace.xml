@@ -16,6 +16,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32edc0e0-dcd0-4f59-a8f8-a468d87bb98f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="gperf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -202,10 +203,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="-10.2">
+            <state line="74" column="103" selection-start="3475" selection-end="3475" vertical-scroll-proportion="0.821366">
               <folding />
             </state>
           </provider>
@@ -253,10 +254,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="63" selection-start="899" selection-end="899" vertical-scroll-proportion="0.38235295">
+            <state line="4" column="14" selection-start="231" selection-end="231" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
@@ -307,13 +308,13 @@
         <option value="$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/perf/Result.groovy" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/grails-app/services/com/perf/DataService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com/perf/DataController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/templates/_navigation.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/application.properties" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -1226,16 +1227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="-10.2">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="40" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
@@ -1301,9 +1292,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="63" selection-start="899" selection-end="899" vertical-scroll-proportion="0.38235295">
+        <state line="4" column="14" selection-start="231" selection-end="231" vertical-scroll-proportion="-2.6153846">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="103" selection-start="3475" selection-end="3475" vertical-scroll-proportion="0.821366">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
