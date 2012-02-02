@@ -8,18 +8,18 @@ class DataController {
     RedisService redisService
     DataService dataService
 
-     def populateSampleConsumerData = {
-        dataService.populateSampleConsumerData()
-        render text: "sample data populated", contentType: "text/plain"
+     def populateSampleData = {
+        dataService.populateSampleData()
+        render text: "Sample Data Populated.", contentType: "text/plain"
     }
 
     def flushdb = {
         dataService.flushDB()
-        render text: "flushed db", contentType: "text/plain"
+        render text: "Flushed Redis DB.", contentType: "text/plain"
     }
 
     def flushresults = {
         dataService.flushResults()
-        render text: "flushed results", contentType: "text/plain"
+        render text: "Flushed results.", contentType: "text/plain"
     }
 }

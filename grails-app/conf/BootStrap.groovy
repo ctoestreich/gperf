@@ -9,7 +9,7 @@ class BootStrap {
     def executorService
 
     def init = { servletContext ->
-        dataService.populateSampleConsumerData()
+        dataService.populateSampleData()
 
         PerformanceRunnerJob.metaClass.runAsync = { Runnable runme ->
             executorService.withPersistence(runme)
@@ -22,7 +22,6 @@ class BootStrap {
         PerformanceRunnerJob.metaClass.callAsync = { Runnable runme, returnval ->
             executorService.withPersistence(runme, returnval)
         }
-
     }
     def destroy = {
     }

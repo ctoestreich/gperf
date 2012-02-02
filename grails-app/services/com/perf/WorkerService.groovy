@@ -20,6 +20,6 @@ class WorkerService {
     def stopWorkers(String jobName) {
         log.debug "Stopping ${jobName}"
         redisService.set(jobName, PerformanceConstants.STOPPED)
-        redisService.set("${jobName + PerformanceConstants.WORKERS}", "0")
+        redisService.set("${jobName}${PerformanceConstants.WORKERS}", "0")
     }
 }

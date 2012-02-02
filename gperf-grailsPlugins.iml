@@ -3,7 +3,13 @@
   <component name="FacetManager">
     <facet type="web" name="GrailsWeb">
       <configuration>
-        <webroots />
+        <webroots>
+          <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5/web-app" relative="/" />
+        </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
     <facet type="hibernate" name="Hibernate">
@@ -16,14 +22,97 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/hibernate-2.0.0" />
-    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/tomcat-2.0.0" />
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5/grails-app/i18n" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/codenarc-0.16.1">
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/codenarc-0.16.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/codenarc-0.16.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/codenarc-0.16.1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.3">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.3/src/groovy" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.3/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.3/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.3/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/executor-0.3">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/executor-0.3/src/groovy" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/executor-0.3/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/executor-0.3/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/executor-0.3/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/hibernate-2.0.0">
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/hibernate-2.0.0/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/hibernate-2.0.0/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/hibernate-2.0.0/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jesque-0.2.0">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jesque-0.2.0/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jesque-0.2.0/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jesque-0.2.0/grails-app/services" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jesque-0.2.0/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jesque-0.2.0/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jesque-0.2.0/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/spock-0.6-SNAPSHOT">
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/spock-0.6-SNAPSHOT/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/spock-0.6-SNAPSHOT/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/spock-0.6-SNAPSHOT/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/svn-1.0.0.M1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/svn-1.0.0.M1/src/groovy" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/svn-1.0.0.M1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/svn-1.0.0.M1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/svn-1.0.0.M1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/tomcat-2.0.0">
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/tomcat-2.0.0/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/tomcat-2.0.0/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/tomcat-2.0.0/web-app/plugins" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="grails-2.0.0" level="application" />
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (gperf-grailsPlugins)">
         <CLASSES>
+          <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/svn-1.0.0.M1/lib" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/net.greghaines/jesque/jars/jesque-1.0.1.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/commons-pool/commons-pool/jars/commons-pool-1.5.6.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.8.4.jar!/" />
@@ -34,9 +123,48 @@
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.spockframework/spock-core/jars/spock-core-0.6-groovy-1.8-SNAPSHOT.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.spockframework/spock-grails-support/jars/spock-grails-support-0.6-groovy-1.8-SNAPSHOT.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/antlr/antlr/jars/antlr-2.7.6.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/commons-pool/commons-pool/jars/commons-pool-1.5.5.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-bindings-xml/jars/cxf-rt-bindings-xml-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-databinding-jaxb/jars/cxf-rt-databinding-jaxb-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-tools-common/jars/cxf-tools-common-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-bindings-soap/jars/cxf-rt-bindings-soap-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.geronimo.specs/geronimo-javamail_1.4_spec/bundles/geronimo-javamail_1.4_spec-1.7.1.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/com.sun.xml.bind/jaxb-impl/jars/jaxb-impl-2.1.13.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-core/jars/cxf-rt-core-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.codehaus.woodstox/stax2-api/jars/stax2-api-3.0.2.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.codehaus.woodstox/woodstox-core-asl/jars/woodstox-core-asl-4.0.8.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-common-schemas/jars/cxf-common-schemas-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/wsdl4j/wsdl4j/jars/wsdl4j-1.6.2.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.neethi/neethi/jars/neethi-2.0.4.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.ws.commons.schema/XmlSchema/bundles/XmlSchema-1.4.7.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-common-utilities/jars/cxf-common-utilities-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-api/jars/cxf-api-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/asm/asm/jars/asm-3.3.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/xml-resolver/xml-resolver/jars/xml-resolver-1.2.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-frontend-jaxws/jars/cxf-rt-frontend-jaxws-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.bouncycastle/bcprov-jdk15/jars/bcprov-jdk15-1.43.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-ws-security/jars/cxf-rt-ws-security-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/xalan/xalan/jars/xalan-2.7.1.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.santuario/xmlsec/bundles/xmlsec-1.4.3.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.ws.security/wss4j/bundles/wss4j-1.5.9.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.codehaus.jettison/jettison/bundles/jettison-1.2.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-databinding-aegis/jars/cxf-rt-databinding-aegis-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/javax.ws.rs/jsr311-api/jars/jsr311-api-1.1.1.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-frontend-jaxrs/jars/cxf-rt-frontend-jaxrs-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-ws-addr/jars/cxf-rt-ws-addr-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-transports-http/jars/cxf-rt-transports-http-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.cxf/cxf-rt-frontend-simple/jars/cxf-rt-frontend-simple-2.3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.7.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.ant/ant/jars/ant-1.7.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/asm/asm-tree/jars/asm-tree-3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/net.sourceforge.cobertura/cobertura/jars/cobertura-1.9.4.1.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.gmetrics/GMetrics/jars/GMetrics-0.4.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.codenarc/CodeNarc/jars/CodeNarc-0.16.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/svn-1.0.0.M1/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>
