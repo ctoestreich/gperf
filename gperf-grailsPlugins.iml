@@ -7,6 +7,8 @@
           <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.6/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/web-app" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -31,6 +33,12 @@
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/codenarc-0.16.1/target/classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/codenarc-0.16.1/target/test-classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/codenarc-0.16.1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.6">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.6/src/groovy" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.6/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.6/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.6/web-app/plugins" />
     </content>
     <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/executor-0.3">
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/executor-0.3/src/groovy" isTestSource="false" />
@@ -66,6 +74,13 @@
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/target/classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/target/test-classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1/web-app/plugins" />
     </content>
     <content url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2">
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2/src/java" isTestSource="false" />

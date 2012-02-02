@@ -8,18 +8,23 @@ class StockQuotePerformanceService extends AbstractPerformanceService {
 
     StockQuoteSoap stockQuoteClient
 
-    com.perf.Result performTest() {
+    Result performTest() {
         String quote = ''
+        Boolean isError = false
 
         def duration = benchmark {
-            quote = stockQuoteClient.getQuote(randomStock)
+            try {
+                quote = stockQuoteClient.getQuote(randomStock)
+            } catch (Exception e) {
+                isError = true
+            }
         }
 
-        new Result(details: quote, executionTime: duration, testName: 'Stock Quote Performance Service')
+        new Result(details: quote, isError: (isError || !quote), executionTime: duration, testName: 'Stock Quote Performance Service')
     }
 
     private String getRandomStock() {
-        List stocks = ['BBY', 'AAPL', 'MSFT', 'UNH', 'AA','DLTA','AAA', 'XYXYXY']
+        List stocks = ['BBY', 'AAPL', 'MSFT', 'UNH', 'AA', 'DLTA', 'AAA', 'XYXYXY']
         //println stocks.getAt(new Random().nextInt(stocks.size()))
         return stocks.getAt(new Random().nextInt(stocks.size()))
     }
