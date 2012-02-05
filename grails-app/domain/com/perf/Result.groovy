@@ -1,5 +1,8 @@
 package com.perf
 
+import groovy.transform.ToString
+
+@ToString(includeNames = true, includeFields = true, excludes = "class, id")
 class Result implements Serializable {
 
     String testName
@@ -7,12 +10,4 @@ class Result implements Serializable {
     Integer executionTime = 0
     Date createDate = new Date()
     Boolean isError = false
-
-    public String toString() {
-        "testName=" + testName +
-        "&details=" + details +
-        "&executionTime=" + executionTime +
-        "&createDate=" + createDate +
-        "&isError=" + isError
-    }
 }

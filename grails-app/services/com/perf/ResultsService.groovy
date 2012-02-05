@@ -1,6 +1,8 @@
 package com.perf
 
 import grails.plugin.redis.RedisService
+import groovy.json.JsonBuilder
+import grails.converters.JSON
 
 class ResultsService {
 
@@ -32,7 +34,10 @@ class ResultsService {
     }
 
     void saveResults(String jobName, Result result) {
-        redisService.rpush(jobName + (result?.isError ? PerformanceConstants.ERROR : PerformanceConstants.RESULTS), result.toString())
+//        println result as JSON
+//        println "saving ${(result as JSON).toString()}"
+//        redisService.rpush(jobName + (result?.isError ? PerformanceConstants.ERROR : PerformanceConstants.RESULTS), result.toString())
+        redisService.rpush(jobName + (result?.isError ? PerformanceConstants.ERROR : PerformanceConstants.RESULTS), (result as JSON).toString())
         redisService.rpush(jobName + PerformanceConstants.DURATION, result.executionTime.toString())
     }
 
