@@ -92,12 +92,6 @@ log4j = {
 }
 
 grails.resources.modules = {
-    highchart {
-        dependsOn 'jquery'
-        defaultBundle 'charting'
-        resource url: '/js/highchart/highcharts.js'
-//        resource url:'/js/highchart/themes/gray.js'
-    }
     app {
         dependsOn 'jquery'
         resource url: '/js/application.js'
@@ -122,6 +116,12 @@ grails {
 
 perf {
     runners {
+        dataComparisonPerformanceRunner {
+            description = 'Data Comparison Memoize Sleep Date'
+            maxWorkers = 5
+            workerClass = com.perf.runners.data.DataComparisonPerformanceService
+        }
+
         xmlSlurperPerformanceRunner {
             description = 'Xml Slurper Performance Runner'
             maxWorkers = 10

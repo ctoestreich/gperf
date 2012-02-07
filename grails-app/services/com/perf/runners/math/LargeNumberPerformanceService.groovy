@@ -2,6 +2,7 @@ package com.perf.runners.math
 
 import com.perf.Result
 import com.perf.runners.AbstractPerformanceService
+import com.perf.result.SimpleResult
 
 class LargeNumberPerformanceService extends AbstractPerformanceService {
 
@@ -12,6 +13,6 @@ class LargeNumberPerformanceService extends AbstractPerformanceService {
                 result += it
             }
         }
-        new Result(testName: 'Long Number Performance Service', executionTime: executionTime)
+        new SimpleResult(testName: 'Long Number Performance Service', executionTime: executionTime)
     }
 }

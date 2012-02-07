@@ -15,14 +15,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32edc0e0-dcd0-4f59-a8f8-a468d87bb98f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/services/com/perf/runners/data/DataComparisonPerformanceService.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/templates/_valueNavigation.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/com/perf/Result.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/com/perf/result/ComparisonResult.groovy" />
+      <change type="DELETED" beforePath="C:\projects\gperf\grails-app\domain\com\perf\ComparisonResult.groovy" afterPath="" />
+      <change type="MOVED" beforePath="C:\projects\gperf\grails-app\domain\com\perf\Result.groovy" afterPath="$PROJECT_DIR$/src/groovy/com/perf/result/SimpleResult.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gperf-grailsPlugins.iml" afterPath="$PROJECT_DIR$/gperf-grailsPlugins.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gperf.iml" afterPath="$PROJECT_DIR$/gperf.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/perf/Result.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/perf/Result.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy" afterPath="$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/com/perf/ResultsService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/com/perf/ResultsService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/com/perf/runners/math/LargeNumberPerformanceService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/com/perf/runners/math/LargeNumberPerformanceService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/com/perf/runners/soap/StockQuotePerformanceService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/com/perf/runners/soap/StockQuotePerformanceService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/com/perf/runners/xml/XmlSlurperPerformanceService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/com/perf/runners/xml/XmlSlurperPerformanceService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/results/resultDetails.gsp" afterPath="$PROJECT_DIR$/grails-app/views/results/resultDetails.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/templates/_results.gsp" afterPath="$PROJECT_DIR$/grails-app/views/templates/_results.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/main.css" afterPath="$PROJECT_DIR$/web-app/css/main.css" />
     </list>
     <ignored path="gperf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,82 +95,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/DataService.groovy">
+      <file leaf-file-name="DataComparisonPerformanceService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/data/DataComparisonPerformanceService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Result.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/com/perf/Result.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="34" selection-start="300" selection-end="300" vertical-scroll-proportion="-7.826087">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToString.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.grails/ivy-cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.5.jar!/groovy/transform/ToString.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="53" selection-start="616" selection-end="616" vertical-scroll-proportion="-8.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultsService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/ResultsService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="57" selection-start="1155" selection-end="1155" vertical-scroll-proportion="-12.807693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resultKeys.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/results/resultKeys.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resultDetails.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/results/resultDetails.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="38" selection-start="435" selection-end="435" vertical-scroll-proportion="-3.8297873">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RenderTagLib.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///Apps/grails-2.0.0/dist/grails-plugin-gsp-2.0.0.jar!/org/codehaus/groovy/grails/plugins/web/taglib/RenderTagLib.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="31" selection-start="11282" selection-end="11282" vertical-scroll-proportion="-6.8">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_results.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/templates/_results.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="502" selection-end="502" vertical-scroll-proportion="0.4079498">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="18" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+            <state line="11" column="39" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -167,9 +107,166 @@
       <file leaf-file-name="PerformanceRunnerJob.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="28" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="23" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="126" column="26" selection-start="4417" selection-end="4417" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleResult.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/groovy/com/perf/result/SimpleResult.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="165" selection-end="165" vertical-scroll-proportion="-1.9767442">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlSlurperPerformanceService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/xml/XmlSlurperPerformanceService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="71" selection-start="223" selection-end="260" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockQuotePerformanceService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/soap/StockQuotePerformanceService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="22" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LargeNumberPerformanceService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/math/LargeNumberPerformanceService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="99" selection-start="395" selection-end="486" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComparisonResult.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/groovy/com/perf/result/ComparisonResult.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="11" selection-start="193" selection-end="193" vertical-scroll-proportion="-2.372093">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/groovy/com/perf/Result.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="12" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultsService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/ResultsService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="23" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resultDetails.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/results/resultDetails.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="7" selection-start="679" selection-end="679" vertical-scroll-proportion="0.33849558">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_valueNavigation.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/templates/_valueNavigation.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="209" selection-end="209" vertical-scroll-proportion="-2.0816326">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.6/web-app/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="563" column="27" selection-start="10562" selection-end="10562" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5/web-app/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="262" column="14" selection-start="4654" selection-end="4654" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_results.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/templates/_results.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="37" selection-start="370" selection-end="370" vertical-scroll-proportion="-2.0816326">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="563" column="27" selection-start="11204" selection-end="11204" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database_delete.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/images/skin/database_delete.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -187,22 +284,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/com/perf/DataService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com/perf/DataController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/templates/_navigation.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/grails-app/services/com/perf/runners/soap/StockQuotePerformanceService.groovy" />
-        <option value="$PROJECT_DIR$/../octopress/source/_posts/2012-02-02-grails-performance-framework.markdown" />
-        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-        <option value="$PROJECT_DIR$/application.properties" />
-        <option value="$PROJECT_DIR$/grails-app/services/com/perf/ResultsService.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/com/perf/Result.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/perf/Result.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/results/resultDetails.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/domain/com/perf/SimpleResult.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/perf/runners/xml/XmlSlurperPerformanceService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/perf/runners/soap/StockQuotePerformanceService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/perf/runners/math/LargeNumberPerformanceService.groovy" />
+        <option value="$PROJECT_DIR$/../octopress/source/_posts/2012-02-02-grails-performance-framework.markdown" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/perf/ResultsService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/com/perf/ComparisonResult.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/perf/runners/data/DataComparisonPerformanceService.groovy" />
+        <option value="$PROJECT_DIR$/application.properties" />
         <option value="$PROJECT_DIR$/grails-app/views/templates/_results.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/main.css" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/templates/_valueNavigation.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/results/resultDetails.gsp" />
       </list>
     </option>
   </component>
@@ -244,7 +349,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -297,7 +402,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -340,6 +444,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="perf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="grails-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -366,7 +538,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="results" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,11 +553,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gperf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,9 +616,33 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="773dc05e-0d7e-426b-b46d-65075c8707a8">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/codenarc-0.16.1" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.6" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/executor-0.3" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/hibernate-2.0.0" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jesque-0.2.0" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-1.7.1" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/jquery-ui-1.8.15" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/redis-1.1" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/resources-1.0.2" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/spock-0.6-SNAPSHOT" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/svn-1.0.0.M1" />
+            <mapping local="$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/tomcat-2.0.0" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -575,38 +812,38 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="972" extended-state="0" />
-    <editor active="true" />
+    <frame x="-4" y="-4" width="1928" height="1148" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3270809" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681018" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29308325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30821916" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297456" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25092024" sideWeight="0.6729191" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20695187" sideWeight="0.6917808" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297456" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -638,7 +875,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding readme documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring the domain objects to POGO for better jsonify support and adding Result Interface" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -655,6 +892,7 @@
     <MESSAGE value="moving to a generic package" />
     <MESSAGE value="adding another test for performance testing" />
     <MESSAGE value="adding readme documentation" />
+    <MESSAGE value="refactoring the domain objects to POGO for better jsonify support and adding Result Interface" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -699,13 +937,6 @@
         <state line="21" column="0" selection-start="1371" selection-end="1371" vertical-scroll-proportion="-17.85" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="9" selection-start="4900" selection-end="4900" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="9" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" />
@@ -716,19 +947,37 @@
         <state line="8" column="11" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/soap/StockQuotePerformanceService.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/results/resultKeys.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar:///Apps/grails-2.0.0/dist/grails-plugin-gsp-2.0.0.jar!/org/codehaus/groovy/grails/plugins/web/taglib/RenderTagLib.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="31" selection-start="11282" selection-end="11282" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/apps/grails-2.0.0/src/grails-plugin-gsp-2.0.0-sources.jar!/org/codehaus/groovy/grails/plugins/web/taglib/RenderTagLib.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="2" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" />
+        <state line="19" column="37" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/soap/StockQuotePerformanceService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="28" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0" />
+        <state line="23" column="22" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/DataService.groovy">
@@ -736,37 +985,68 @@
         <state line="13" column="8" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/results/resultKeys.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/xml/XmlSlurperPerformanceService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="71" selection-start="223" selection-end="260" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application.properties">
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+        <state line="692" column="25" selection-start="29175" selection-end="29175" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/ResultsService.groovy">
+    <entry file="file://$PROJECT_DIR$/../octopress/source/_posts/2012-02-02-grails-performance-framework.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="57" selection-start="1155" selection-end="1155" vertical-scroll-proportion="-12.807693">
+        <state line="61" column="0" selection-start="2938" selection-end="2938" vertical-scroll-proportion="-4.7777777">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/AbstractPerformanceService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="15" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.grails/ivy-cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.5.jar!/groovy/transform/ToString.class">
+    <entry file="jar://C:/apps/grails-2.0.0/src/grails-web-2.0.0-sources.jar!/org/codehaus/groovy/grails/web/json/JSONArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="53" selection-start="616" selection-end="616" vertical-scroll-proportion="-8.4">
+        <state line="147" column="11" selection-start="5602" selection-end="5602" vertical-scroll-proportion="279.16">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/perf/Result.groovy">
+    <entry file="jar://C:/apps/grails-2.0.0/src/grails-web-2.0.0-sources.jar!/org/codehaus/groovy/grails/web/json/JSONObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="300" selection-end="300" vertical-scroll-proportion="-7.826087">
+        <state line="252" column="11" selection-start="8964" selection-end="8964" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/templates/_navigation.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="54" selection-start="0" selection-end="3858" vertical-scroll-proportion="0.25646552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/apps/groovy-1.8.4/src/main/org/codehaus/groovy/runtime/DefaultGroovyMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10537" column="25" selection-start="400942" selection-end="400942" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/perf/result/SimpleResult.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="165" selection-end="165" vertical-scroll-proportion="-1.9767442">
           <folding />
         </state>
       </provider>
@@ -774,23 +1054,122 @@
         <state />
       </provider>
     </entry>
-    <entry file="jar:///Apps/grails-2.0.0/dist/grails-plugin-gsp-2.0.0.jar!/org/codehaus/groovy/grails/plugins/web/taglib/RenderTagLib.class">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/math/LargeNumberPerformanceService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="31" selection-start="11282" selection-end="11282" vertical-scroll-proportion="-6.8">
+        <state line="15" column="99" selection-start="395" selection-end="486" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/runners/data/DataComparisonPerformanceService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="39" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/perf/result/ComparisonResult.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="11" selection-start="193" selection-end="193" vertical-scroll-proportion="-2.372093">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/perf/Result.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="26" selection-start="4417" selection-end="4417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/images/skin/database_delete.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/templates/_results.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="37" selection-start="370" selection-end="370" vertical-scroll-proportion="-2.0816326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/code-coverage-1.2.5/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="14" selection-start="4654" selection-end="4654" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.grails/2.0.0/projects/gperf/plugins/cxf-client-1.2.6/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="563" column="27" selection-start="10562" selection-end="10562" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="563" column="27" selection-start="11204" selection-end="11204" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/templates/_valueNavigation.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="209" selection-end="209" vertical-scroll-proportion="-2.0816326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/GrailsGriffon/lib/GrailsGriffon.jar!/org/jetbrains/plugins/grails/lang/gsp/resolve/taglib/tld/grails.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="19" selection-start="969" selection-end="969" vertical-scroll-proportion="0.3617021">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/ResultsService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="23" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/results/resultDetails.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="38" selection-start="435" selection-end="435" vertical-scroll-proportion="-3.8297873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/templates/_results.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="502" selection-end="502" vertical-scroll-proportion="0.4079498">
+        <state line="18" column="7" selection-start="679" selection-end="679" vertical-scroll-proportion="0.33849558">
           <folding />
         </state>
       </provider>
@@ -803,7 +1182,7 @@
           <value>
             <GrailsSettings>
               <option name="buildConfigCrc" value="-594354809" />
-              <option name="pluginDependenciesCrc" value="1987761010" />
+              <option name="pluginDependenciesCrc" value="-1968656444" />
               <option name="properties">
                 <map>
                   <entry key="grails.project.class.dir" value="target/classes" />

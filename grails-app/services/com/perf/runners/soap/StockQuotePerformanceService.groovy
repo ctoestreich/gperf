@@ -3,6 +3,7 @@ package com.perf.runners.soap
 import com.perf.Result
 import com.perf.runners.AbstractPerformanceService
 import net.webservicex.StockQuoteSoap
+import com.perf.result.SimpleResult
 
 class StockQuotePerformanceService extends AbstractPerformanceService {
 
@@ -20,7 +21,7 @@ class StockQuotePerformanceService extends AbstractPerformanceService {
             }
         }
 
-        new Result(details: quote, isError: (isError || !quote), executionTime: duration, testName: 'Stock Quote Performance Service')
+        new SimpleResult(details: quote, isError: (isError || !quote), executionTime: duration, testName: 'Stock Quote Performance Service')
     }
 
     private String getRandomStock() {

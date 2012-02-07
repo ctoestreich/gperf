@@ -34,16 +34,8 @@ class ResultsService {
     }
 
     void saveResults(String jobName, Result result) {
-//        println result as JSON
-//        println "saving ${(result as JSON).toString()}"
-//        redisService.rpush(jobName + (result?.isError ? PerformanceConstants.ERROR : PerformanceConstants.RESULTS), result.toString())
+        println result as JSON
         redisService.rpush(jobName + (result?.isError ? PerformanceConstants.ERROR : PerformanceConstants.RESULTS), (result as JSON).toString())
         redisService.rpush(jobName + PerformanceConstants.DURATION, result.executionTime.toString())
-    }
-
-    private Map createMap(String data) {
-        def map = [:]
-        data.findAll(/([^&=]+)=([^&]+)/) { full, name, value ->  map[name] = value }
-        map
     }
 }

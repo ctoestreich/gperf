@@ -685,3 +685,7 @@ a.skip {
 .step {
     padding-right: 3px;
 }
+
+.nullValue {
+    display: none;
+}

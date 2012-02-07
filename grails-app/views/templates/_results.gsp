@@ -1,16 +1,12 @@
-<%@ page import="groovy.json.JsonSlurper; com.perf.Result" %>
+<%@ page import="org.codehaus.groovy.grails.web.json.JSONObject; org.codehaus.groovy.grails.web.json.JSONArray; groovy.json.JsonSlurper; com.perf.Result" %>
 <div class="job jobrunner">
-    <%
-        def obj = new JsonSlurper()
-    %>
-    <g:if test="${result?.toString()?.contains(Result.class.name.toString())}">
+    <g:if test="${result ==~ /.*com\.perf\.result\.[a-zA-Z]*Result.*/}">
         <%
-        Result rslt = ((Result) obj.parseText(result))
+        def rslt = new JSONObject(result.toString())
         %>
-        <b>Name:</b> ${rslt?.testName}<br>
-        <b>Execution Time:</b> ${rslt?.executionTime}<br>
-        <b>Error:</b> ${rslt?.isError}<br>
-        <b>Details:</b> ${rslt?.details?.encodeAsHTML()}
+        <g:each in="${rslt.sort()}" var="prop">
+          <span class="${!prop?.value || prop?.value?.toString()?.trim() == "null" ? "nullValue" : "value"}"><b>${prop.key.toString().capitalize()}:</b> ${prop?.value}<br></span>
+        </g:each>     
     </g:if>
     <g:else>
         <b>Data:</b> ${result}

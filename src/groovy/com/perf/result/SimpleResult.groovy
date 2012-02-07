@@ -1,9 +1,10 @@
-package com.perf
+package com.perf.result
 
 import groovy.transform.ToString
+import com.perf.Result
 
 @ToString(includeNames = true, includeFields = true, excludes = "class, id")
-class Result implements Serializable {
+class SimpleResult implements Serializable, Result {
 
     String testName
     String details

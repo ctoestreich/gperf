@@ -3,6 +3,7 @@ package com.perf.runners.xml
 import com.perf.runners.AbstractPerformanceService
 import com.perf.Result
 import org.bouncycastle.crypto.tls.RecordStream
+import com.perf.result.SimpleResult
 
 class XmlSlurperPerformanceService extends AbstractPerformanceService {
 
@@ -38,7 +39,7 @@ class XmlSlurperPerformanceService extends AbstractPerformanceService {
             assert 'co-re-co-re-co-re' == records.car.'*'.collect{ it.name()[0..1] }.join('-')
         }
 
-        new Result(executionTime: duration, details: records.car, testName: 'Xml Slurper Performance Test')
+        new SimpleResult(executionTime: duration, details: records.car, testName: 'Xml Slurper Performance Test')
     }
 
     static def CAR_RECORDS = '''
