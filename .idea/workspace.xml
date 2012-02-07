@@ -92,7 +92,7 @@
       <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="10" selection-start="4651" selection-end="4651" vertical-scroll-proportion="0.5935551">
+            <state line="52" column="10" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.45218295">
               <folding />
             </state>
           </provider>
@@ -741,7 +741,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring the domain objects to POGO for better jsonify support and adding Result Interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating the readme with new changes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -759,6 +759,7 @@
     <MESSAGE value="adding another test for performance testing" />
     <MESSAGE value="adding readme documentation" />
     <MESSAGE value="refactoring the domain objects to POGO for better jsonify support and adding Result Interface" />
+    <MESSAGE value="updating the readme with new changes" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1037,7 +1038,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="10" selection-start="4651" selection-end="4651" vertical-scroll-proportion="0.5935551">
+        <state line="52" column="10" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.45218295">
           <folding />
         </state>
       </provider>

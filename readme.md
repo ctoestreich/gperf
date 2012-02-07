@@ -48,7 +48,6 @@ This method performTest must return a Result interface as this will be used to l
          Date createDate
          Boolean isError
      }
-
 ```
 
 ``` groovy
