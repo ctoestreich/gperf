@@ -100,6 +100,7 @@ grails.resources.modules = {
 
 grails {
     redis {
+        host = 'apsed0246'
         password = ''
     }
     jesque {

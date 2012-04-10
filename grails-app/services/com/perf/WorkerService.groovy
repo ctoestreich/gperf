@@ -14,7 +14,9 @@ class WorkerService {
     def startWorkers(String jobName, String workers) {
         log.debug "Starting $jobName with $workers workers"
         redisService.set(jobName, PerformanceConstants.RUNNING)
-        jesqueService.enqueue('gPerfQueue',PerformanceRunnerJob.simpleName, jobName, workers)
+        Integer.parseInt(workers).times {
+            jesqueService.enqueue('gPerfQueue', PerformanceRunnerJob.simpleName, jobName, workers)
+        }
     }
 
     def stopWorkers(String jobName) {

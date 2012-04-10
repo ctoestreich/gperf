@@ -31,8 +31,8 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        test ":spock:0.6-SNAPSHOT"
+        test ":spock:0.6"
         test ":code-coverage:1.2.5"
-        test ":codenarc:0.16.1"
+        test ":codenarc:0.17"
     }
 }

@@ -9,7 +9,6 @@ class PerformanceRunnerJob {
     GrailsApplication grailsApplication
     RedisService redisService
     ResultsService resultsService
-    def executorService
 
     def perform(jobName, workers) {
         println "jesque queueing up job ${jobName} with ${workers} threads"
@@ -19,8 +18,8 @@ class PerformanceRunnerJob {
         }
         PerformanceService service = (PerformanceService) grailsApplication.mainContext.getBean(clazz)
 
-        def threads = Integer.parseInt(workers)
-        threads.times {
+//        def threads = Integer.parseInt(workers)
+//        threads.times {
             runAsync {
                 println "running ${jobName} on thread :: ${Thread.currentThread().id}"
                 while(redisService.get(jobName) == PerformanceConstants.RUNNING) {
@@ -29,7 +28,7 @@ class PerformanceRunnerJob {
                     saveResults(jobName, result)
                 }
             }
-        }
+        //}
     }
 
     def doWork(service, jobName, workers) {
