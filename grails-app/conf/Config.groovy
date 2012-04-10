@@ -116,25 +116,10 @@ grails {
 }
 
 perf {
-    /**
-     * Property: multiServer
-     *
-     * True: Set this to true to use one worker (thread) per job. The framework would then use the
-     * workers from the jesque config block as the max number of active jobs (thread pool).  This will
-     * NOT use executor and each jesque job will be its own thread. Pool is limited by number of job
-     * workers per server.
-     *
-     * False: set to false if you want to use one server in which one jesque job will spawn x threads as
-     * passed by the client.  This will use the executor plugin to spawn many threads per job listener.
-     *
-     * You can set this to true or false regardless of whether you are actually using multiple servers if
-     * you simply want to change the behavior of how the threads are controlled.
-     */
-    multiServer = true
     runners {
         dataComparisonPerformanceRunner {
             description = 'Data Comparison Memoize Sleep Date'
-            maxWorkers = 5
+            maxWorkers = 50
             workerClass = com.perf.runners.data.DataComparisonPerformanceService
         }
 

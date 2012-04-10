@@ -7,17 +7,13 @@ class WorkerService {
     def jesqueService
     def grailsApplication
 
-    def resumeWorkers() {
-
-    }
-
     def startWorkers(String jobName, String workers) {
         log.debug "Starting $jobName with $workers workers"
         redisService.set(jobName, PerformanceConstants.RUNNING)
-        workers = !grailsApplication.config?.perf?.multiServer ? workers : 1
-        Integer.parseInt(workers).times {
-            jesqueService.enqueue('gPerfQueue', PerformanceRunnerJob.simpleName, jobName, workers)
-        }
+        //Integer.parseInt(workers).times {
+        //like the multiple threads per worker approach better than the 1->1 approach for now
+        jesqueService.enqueue('gPerfQueue', PerformanceRunnerJob.simpleName, jobName, workers)
+        //}
     }
 
     def stopWorkers(String jobName) {
