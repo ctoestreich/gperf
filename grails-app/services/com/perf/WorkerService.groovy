@@ -4,8 +4,8 @@ class WorkerService {
 
     static transactional = false
     def redisService
-    def resultsService
     def jesqueService
+    def grailsApplication
 
     def resumeWorkers() {
 
@@ -14,6 +14,7 @@ class WorkerService {
     def startWorkers(String jobName, String workers) {
         log.debug "Starting $jobName with $workers workers"
         redisService.set(jobName, PerformanceConstants.RUNNING)
+        workers = !grailsApplication.config?.perf?.multiServer ? workers : 1
         Integer.parseInt(workers).times {
             jesqueService.enqueue('gPerfQueue', PerformanceRunnerJob.simpleName, jobName, workers)
         }

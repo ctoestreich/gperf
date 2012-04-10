@@ -15,22 +15,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32edc0e0-dcd0-4f59-a8f8-a468d87bb98f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gperf-grailsPlugins.iml" afterPath="$PROJECT_DIR$/gperf-grailsPlugins.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gperf.iml" afterPath="$PROJECT_DIR$/gperf.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy" afterPath="$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/sitemesh.xml" afterPath="$PROJECT_DIR$/web-app/WEB-INF/sitemesh.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/tld/c.tld" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/c.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/tld/fmt.tld" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/fmt.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/tld/grails.tld" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/grails.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/tld/spring.tld" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/spring.tld" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="gperf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,7 +82,7 @@
       <file leaf-file-name="2012-02-02-grails-performance-framework.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../octopress/source/_posts/2012-02-02-grails-performance-framework.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="3" selection-start="3274" selection-end="3274" vertical-scroll-proportion="0.0">
+            <state line="218" column="23" selection-start="8939" selection-end="8939" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Config.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="35" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.58672374">
+            <state line="130" column="80" selection-start="4098" selection-end="4866" vertical-scroll-proportion="-14.28">
               <folding />
             </state>
           </provider>
@@ -120,7 +109,7 @@
       <file leaf-file-name="WorkerService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+            <state line="18" column="98" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,10 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PerformanceRunnerJob.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PerformanceRunnerJob.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="74" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
+            <state line="37" column="5" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.17276423">
               <folding />
             </state>
           </provider>
@@ -194,7 +183,7 @@
       <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="23" selection-start="2893" selection-end="2893" vertical-scroll-proportion="0.0">
+            <state line="127" column="4" selection-start="5677" selection-end="5677" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -240,13 +229,13 @@
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/templates/_valueNavigation.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/results/resultDetails.gsp" />
-        <option value="$PROJECT_DIR$/../octopress/source/_posts/2012-02-02-grails-performance-framework.markdown" />
-        <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/application.properties" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/../octopress/source/_posts/2012-02-02-grails-performance-framework.markdown" />
+        <option value="$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy" />
       </list>
     </option>
   </component>
@@ -844,6 +833,11 @@
       <created>1323897625906</created>
       <updated>1323897625906</updated>
     </task>
+    <task id="LOCAL-00001" summary="moving to 2.0.1 and changing from many threads per worker to many workers">
+      <created>1334075009897</created>
+      <updated>1334075009897</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -863,6 +857,7 @@
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30813953" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297456" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -879,7 +874,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681018" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -921,7 +915,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating the readme with new changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="moving to 2.0.1 and changing from many threads per worker to many workers" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -940,6 +934,7 @@
     <MESSAGE value="adding readme documentation" />
     <MESSAGE value="refactoring the domain objects to POGO for better jsonify support and adding Result Interface" />
     <MESSAGE value="updating the readme with new changes" />
+    <MESSAGE value="moving to 2.0.1 and changing from many threads per worker to many workers" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1100,33 +1095,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="23" selection-start="2893" selection-end="2893" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../octopress/source/_posts/2012-02-02-grails-performance-framework.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="3" selection-start="3274" selection-end="3274" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="17" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
@@ -1137,13 +1105,6 @@
     <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/ResultsService.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="74" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1183,9 +1144,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/perf/WorkerService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="98" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="35" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.58672374">
+        <state line="130" column="80" selection-start="4098" selection-end="4866" vertical-scroll-proportion="-14.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="4" selection-start="5677" selection-end="5677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../octopress/source/_posts/2012-02-02-grails-performance-framework.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="218" column="23" selection-start="8939" selection-end="8939" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/jobs/com/perf/PerformanceRunnerJob.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="5" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.17276423">
           <folding />
         </state>
       </provider>

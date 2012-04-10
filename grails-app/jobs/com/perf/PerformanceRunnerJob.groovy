@@ -10,7 +10,7 @@ class PerformanceRunnerJob {
     RedisService redisService
     ResultsService resultsService
 
-    def perform(jobName, workers) {
+    void perform(jobName, workers) {
         println "jesque queueing up job ${jobName} with ${workers} threads"
         Class clazz = grailsApplication.config?.perf?.runners[jobName]?.workerClass
         if(!clazz) {
@@ -18,22 +18,33 @@ class PerformanceRunnerJob {
         }
         PerformanceService service = (PerformanceService) grailsApplication.mainContext.getBean(clazz)
 
-//        def threads = Integer.parseInt(workers)
-//        threads.times {
-            runAsync {
-                println "running ${jobName} on thread :: ${Thread.currentThread().id}"
-                while(redisService.get(jobName) == PerformanceConstants.RUNNING) {
-                    Result result = service.performTest()
-                    println "blah" + result
-                    saveResults(jobName, result)
-                }
-            }
-        //}
+        if(!grailsApplication.config?.perf?.multiServer) {
+            doWorkAsync(service, jobName, workers)
+        } else {
+            doWork(service, jobName, workers)
+        }
     }
 
-    def doWork(service, jobName, workers) {
+    /**
+     * will spawn as many threads as their are workers passed in
+     */
+    private doWorkAsync(service, jobName, workers) {
+        def threads = Integer.parseInt(workers)
+        threads.times {
+            runAsync {
+                doWork(service, jobName, workers)
+            }
+        }
+    }
+
+    /**
+     * invokes the service and collects and saves the result
+     */
+    private doWork(service, jobName, workers) {
+        println "running ${jobName} on thread :: ${Thread.currentThread().id}"
         while(redisService.get(jobName) == PerformanceConstants.RUNNING) {
             Result result = service.performTest()
+            println "blah" + result
             saveResults(jobName, result)
         }
     }

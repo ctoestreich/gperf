@@ -101,11 +101,12 @@ The last and most important step for activating a performance job is adding the 
 
 ``` groovy
     perf {
+        [multiServer]
         runners {
-            jobName {
-                description
-                maxWorkers
-                workerClass
+            [jobName] {
+                [description]
+                [maxWorkers]
+                [workerClass]
             }
         }
     }
@@ -117,6 +118,20 @@ The values are represented via the following:
     description - A name that will be used to display on the jobs screen
     maxWorkers - Max number of workers available to choose on job screen.  Will be between 1 and maxWorkers in drop down.
     workerClass - Points to the class of the worker to wire up to the job.
+    multiServer - Controls threads for one->job or many->job.
+
+Here is some more information about the multiServer configuration.  By default it is false
+
+    True: Set this to true to use one worker (thread) per job. The framework would then use the
+    workers from the jesque config block as the max number of active jobs (thread pool).  This will
+    NOT use executor and each jesque job will be its own thread. Pool is limited by number of job
+    workers per server.
+
+    False: set to false if you want to use one server in which one jesque job will spawn x threads as
+    passed by the client.  This will use the executor plugin to spawn many threads per job listener.
+
+    You can set this to true or false regardless of whether you are actually using multiple servers if
+    you simply want to change the behavior of how the threads are controlled.
 
 _The jobName MUST be unique or you will get overlapping and/or inaccurate results._
 
