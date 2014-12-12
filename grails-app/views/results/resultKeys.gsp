@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<h3>All Keys</h3>
+<h3><i class="fa fa-key"></i> All Keys</h3>
 <g:render template="/templates/navigation"/>
 Total Items: ${keyCount}<br>
 <g:each in="${keys}" var="key">
@@ -19,7 +19,7 @@ Total Items: ${keyCount}<br>
     </g:else>
   </div>
 </g:each>
-<g:paginate controller="results" action="resultKeys" total="${keyCount}"></g:paginate>
+<bs:paginate controller="results" action="resultKeys" total="${keyCount}"></bs:paginate>
 
 <script type="text/javascript">
   $(function() {

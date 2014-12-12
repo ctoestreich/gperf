@@ -10,10 +10,11 @@
 <g:render template="/templates/navigation"/>
 Total Items: ${itemCount}<br>
 <g:render template="/templates/valueNavigation"/>
+
 <g:each in="${results}" var="result">
     <g:render template="/templates/results" model="[result: result]" />
 </g:each>
-<g:paginate controller="results" action="resultDetails" total="${itemCount}"
-            params="[queue:params?.queue]" ></g:paginate>
+<bs:paginate controller="results" action="resultDetails" total="${itemCount}"
+            params="[queue:params?.queue]" ></bs:paginate>
 </body>
 </html>

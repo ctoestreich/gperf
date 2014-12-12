@@ -1,0 +1,43 @@
+/*
+*= require bootstrap
+*= require jquery
+*= require jquery-ui
+*= require font-awesome
+*= require fonts
+*= require_self
+*/
+
+.logo-text {
+    color: #0983da;
+}
+
+.icon-spin{
+    -webkit-animation: icon-spin 2s infinite linear;
+    animation: icon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.job {
+    padding: 5px 20px;
+    border-bottom: 1px dashed black ;
+}
